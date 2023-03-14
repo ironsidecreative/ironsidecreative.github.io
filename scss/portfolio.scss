@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Sarala:400,700);
+
+.wrapper{font-size:0;}/*for inline block spacing*/
+body{font-family:avenir-medium; background:#444;}
+
+a{
+  display:inline-block;
+  width:33.333%;
+  height:50vh;
+  position:relative;
+}
+
+a img {
+  height:100%; 
+  width:100%;
+  object-fit:cover;}
+a:before, a:after{
+  width:100%;
+  position:absolute;
+  opacity:0;
+  transition:opacity 0.3s ease;
+
+}
+
+.wrapper a:before{
+  content:'';
+  height:100%;
+  background:rgba(250, 121, 35, 0.495);
+}
+
+a:after{
+  content:attr(data-title);
+  font-size:24px;
+  top:calc(50% - 0.5em);
+  left:0;
+  text-align:center;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+a:hover:before, a:hover:after{
+  opacity:1;
+}
+
+
+

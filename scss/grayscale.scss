@@ -1,0 +1,424 @@
+
+#mainNav {
+    min-height: 56px;
+    background-color: none;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: .75rem;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255)
+}
+
+#mainNav .navbar-toggler:focus {
+    outline: 0
+}
+
+#mainNav .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-family: "Avenir-Medium";
+    font-weight: 700;
+    padding: .9rem 0
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+    color: fade(rgb(34, 255, 0), 80%);
+    outline: 0;
+    background-color: transparent
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+    outline: 0;
+    background-color: transparent
+}
+
+@media (min-width:992px) {
+    #mainNav {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        -webkit-transition: background-color .3s ease-in-out;
+        transition: background-color .3s ease-in-out
+    }
+    #mainNav .navbar-brand {
+        padding: .5rem 0;
+        color: rgba(255, 255, 255, .5)
+    }
+    #mainNav .nav-link {
+        -webkit-transition: none;
+        transition: none;
+        padding: 2rem 1.5rem;
+        color: rgba(255, 255, 255, .5)
+    }
+    #mainNav .nav-link:hover {
+        color: rgba(250, 121, 35, 0.495)
+    }
+    #mainNav .nav-link:active {
+        color: #fff;
+        background-color: transparent;
+    }
+    #mainNav.navbar-shrink {
+        background-color: #fff
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: rgb(255, 102, 0);
+    }
+    #mainNav.navbar-shrink .nav-link {
+        color: #292929;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: .25rem solid transparent;
+    }
+    #mainNav.navbar-shrink .nav-link:hover {
+        color: rgb(255, 102, 0);
+    }
+    #mainNav.navbar-shrink .nav-link:active {
+        color: #467370
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: rgb(255, 102, 0);;
+        outline: 0;
+        border-bottom: .25rem solid rgb(255, 102, 0);
+    }
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, .3)), color-stop(75%, rgba(22, 22, 22, .7)), to(#161616)), url(../img/bg-masthead.jpg);
+    background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .7) 75%, #161616 100%), url(../img/arc_001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover
+}
+
+.masthead h1 {
+    font-family: "Avenir-Medium";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .8rem;
+    background: -webkit-linear-gradient(rgb(255, 102, 0), rgba(255, 72, 72, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text
+}
+
+.masthead h2 {
+    max-width: 20rem;
+    font-size: 1rem
+}
+
+@media (min-width:768px) {
+    .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem
+    }
+}
+
+@media (min-width:992px) {
+    .masthead {
+        height: 100vh;
+        padding: 0
+    }
+    .masthead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: .8rem
+    }
+    .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem
+    }
+}
+
+.btn {
+    -webkit-box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1)!important;
+    box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1)!important;
+    padding: 1.25rem 2rem;
+    font-family: 'open sans';
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    border: 0
+}
+
+.btn-primary {
+    background-color: rgba(0, 0, 0, 0.495)
+}
+
+.btn-primary:hover {
+    background-color: rgba(250, 121, 35, 0.495);
+    color: #fff
+}
+
+.btn-primary:focus {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0)
+}
+
+.btn-primary:active {
+    background-color: #ffffff!important
+}
+
+.about-section {
+    padding-top: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, .9)), to(rgba(22, 22, 22, .8)));
+    background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%)
+}
+
+.about-section p {
+    margin-bottom: 5rem
+}
+
+.projects-section {
+    padding: 10rem 0
+}
+
+.projects-section .featured-text {
+    padding: 2rem
+}
+
+@media (min-width:992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: .5rem solid rgb(255, 102, 0);
+    }
+}
+
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%
+}
+
+@media (min-width:992px) {
+    .projects-section .project-text {
+        padding: 5rem
+    }
+    .projects-section .project-text hr {
+        border-color: rgb(255, 102, 0);;
+        border-width: .25rem;
+        width: 30%
+    }
+}
+
+
+.contact-section {
+    padding: 5rem 0 0
+}
+
+.contact-section .card {
+    border: 0;
+    border-bottom: .25rem solid rgb(255, 102, 0);
+}
+
+.contact-section .card h4 {
+    font-size: .8rem;
+    font-family: 'open sans';
+    text-transform: uppercase;
+    letter-spacing: .15rem
+}
+
+.contact-section .card hr {
+    border-color: #000000;
+    border-width: .25rem;
+    width: 3rem
+}
+
+.contact-section .social {
+    margin-top: 5rem
+}
+
+.contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(157, 153, 146, 0.331);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.753)
+}
+
+.contact-section .social a:hover {
+    color: rgba(255, 255, 255, .5)
+}
+
+.contact-section .social a:active {
+    color: #fff
+}
+
+body {
+    font-family: "Avenir-Medium";
+    background-color:#444;
+    letter-spacing: .0625em;
+}
+
+a {
+    color: #282929
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+    color: #282929
+}
+
+.bg-black {
+    background-color: #161616!important
+}
+
+.bg-primary {
+    background-color: rgb(255, 102, 0) !important;
+}
+
+.text-primary {
+    color: #ff8c00!important
+}
+
+footer {
+    padding: 5rem 0
+}
+
+
+
+/*homepage portfolio */
+
+.portwrapper a {
+    display:inline-block;
+    width:100%;
+    height:45vh;
+    position:relative;
+}
+
+.portwrapper a img {
+    height:100%;
+    width:100%;
+    object-fit:cover;}
+  a:before, a:after{
+    width:100%;
+    position:absolute;
+    opacity:0;
+    transition:opacity 0.3s ease;
+}
+
+.portwrapper a:before{
+    content:'';
+    height:100%;
+    background:rgba(250, 121, 35, 0.495);
+  }
+
+.portwrapper a:after{
+    content:attr(data-title);
+    font-size:24px;
+    top:calc(50% - 0.5em);
+    left:0;
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+  }
+
+.portwrapper a:hover:before, a:hover:after{
+    opacity:1;
+  }
+
+
+/*individual portfolio */
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Sarala:400,700);
+
+.wrapper{font-size:0;}/*for inline block spacing*/
+
+@media screen and (max-width: 992px) {
+    .wrapper a{ display:inline-block;
+        width:100%;
+        height:50vh;
+        position:relative;
+        min-width: 100%;
+    }
+
+    .wrapper a img {
+    height:100%;
+    width:100%;
+    object-fit:cover;}
+    .wrapper a:before, a:after{
+    width:100%;
+    position:absolute;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    }
+
+    .wrapper a:before{
+    content:'';
+    height:100%;
+    background:rgba(250, 121, 35, 0.495);
+    }
+
+    .wrapper a:after{
+    content:attr(data-title);
+    font-size:24px;
+    top:calc(50% - 0.5em);
+    left:0;
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+    }
+
+    .wrapper a:hover:before, a:hover:after{
+    opacity:1;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper a{ display:inline-block;
+        width:100%;
+        height:70vh;
+        position:relative;
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+    .wrapper a{ display:inline-block;
+        width:33.27%;
+        height:40vh;
+        position:relative;
+        align-content: stretch;
+    }
+
+}
+
+
+/* Portfolio Navigation */
+.navigation {
+    margin: 0px;
+
+}
+.navigation a {
+   display:inline;
+   font-family: "Avenir-Medium";
+   color: rgb(235, 235, 235);
+   font-size: 2rem;
+   letter-spacing: .550em;
+   line-height: 2.5rem;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .navigation li {
+    display: inline;
+  }
+
+  #interior {
+      background-color: rgb(31, 31, 31);
+  }
